@@ -1,175 +1,130 @@
+
+function putInHtml(answer, location) {
+    let div = document.createElement("div");
+    div.textContent = answer;
+    document.getElementById(location).appendChild(div);
+}
+// putInHtml(name(), 'div2');
+
+
+
 const sampleArray = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472];
 var total = 0;
 
-
-
-
 //#1
-for(var i = 1; i < 21; i++) {
-	document.write(i + " ");
-}
+var pmp = "";
+for(i = 1; i < 21; i++) {
+    pmp = pmp + i + " ";
+ }
+ putInHtml(pmp, 'div1');
+
 //#2
-document.write('<br>');
-for (var i = 1; i < 21; i++){
-      if (i % 2 === 0) 
-      document. write(i + ' ');
-    }
+var pmpT = "";
+for (var i = 1; i < 21; i++) {
+      if (i % 2 === 0)
+      pmpT = pmpT + i + " ";
+}
+ putInHtml(pmpT, 'div2');
 
-//#3
-document.write('<br>');
+//#3;
+var pmpTh = "";
 for (var i = 1; i < 21; i++){
-      if (i % 2 !== 0) 
-      document. write(i + ' ');
-    }
+      if (i % 2 !== 0)
+      pmpTh = pmpTh + i + " ";
+}      
+ putInHtml(pmpTh, 'div3');
+
 //#4
-// document.write('<br>');
-// for (var i = 0; i < 100; i++){
-//     if ((i * 5) !== 1) 
-//     document. write(i + ' ');
-//   }
-//#5
+var pmpTha = "";
+for (var i = 0; i < 101; i++){
+    if (i % 5 === 0)
+    pmpTha = pmpTha + i + " "; 
+}
+putInHtml(pmpTha, 'div4');
 
+//#5
+var pmpThat = "";
+for(var i = 1; i < 11; i++) {
+    pmpThat = pmpThat + i*i + " ";
+}
+putInHtml(pmpThat, 'div5');
 
 //#6
-document.write('<br>');
+var pmpThatL = "";
 for(var i = 20; i > 0; i--) {
-	document.write(i + " ");
+	pmpThatL = pmpThatL + i + " ";
 }
+putInHtml(pmpThatL, 'div6');
+
 //#7
-document.write('<br>');
+var pmpThatLi = "";
 for(var i = 20; i > 0; i--) {
-    if ((i % 2) === 0) 
-	document.write(i + " ");
+    if (i % 2 === 0) 
+	pmpThatLi = pmpThatLi + i + " ";
 }
+putInHtml(pmpThatLi, 'div7');
+
 //#8
-document.write('<br>');
+var pmpThatLig = "";
 for(var i = 20; i > 0; i--) {
-    if ((i % 2) !== 0) 
-	document.write(i + " ");
+    if (i % 2 !== 0) 
+	pmpThatLig = pmpThatLig + i + " ";
 }
+putInHtml(pmpThatLig, 'div8');
+
 //#9
+var pTha = "";
+for (var i = 101; i > 0; i--){
+    if (i % 5 === 0)
+    pTha = pTha + i + " "; 
+}
+putInHtml(pTha, 'div9');
 
 //#10
-
-
-//#11
-document.write('<br>');
-for(i = 0; i < sampleArray.length; i++) {
-    document.write(sampleArray[i] + ' ');
+var phat = "";
+for(var i = 10; i > 0; i--) {
+    phat = phat + i*i + " ";
+	// document.write(i*i + " ");
 }
-//#12
-document.write('<br>');
-for(i = 0; i < sampleArray.length; i++) {
-    if ((i % 2) === 0)
-    document.write(sampleArray[i] + ' ');
-}
-//#13
-document.write('<br>');
+putInHtml(phat, 'div10');
 
-//#16
-document.write('<br>');
-for(var i = 0; i < sampleArray.length; i++){
-    total = (total + sampleArray[i])
-    document.write(total);
-}
-
-
-
-
-
-
-// let alpha = [1];
-
-// for (var i = 0; i < alpha.length; i++){
-//     console.log(alpha[i]);
+// //#11
+// for(i = 0; i < sampleArray.length; i++) {
+//     hit = sampleArray + " ";
+//     // putInHtml(sampleArray[i] + ' ');
 // }
+// putInHtml(hit, 'div11');
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-       // var color_td;
-        //document.write("<table border='1px'>");
-        // let 
-        // for(var i = 1; i < 21; i++) {
-        //     document.write( i );
-        // }
-        // document.write("<br>");
-        // // Line Break
-        
-        // document.write("<br>");
-        // // Line Break
-        // for(var i = 1; i < 21; i++) {
-        //     if ()
-        //     document.write( i );
-        // }
-        // document.write("<br>");
-
-
-            //document.write("<tr style='height:30px;'>");
-           // for(var j = 1; j < 11; j++) {
-                // if(j == 1 || i == 1) {
-                //     color_td = "#cbcdfb";
-                // }
-                // else {
-                //     color_td = "#fff";
-                // }
-              //  document.write( i );
-
-                // document.write("<td style='width:30px;background-color:" + color_td + "'>" + i*j + "</td>");
-           // }
-           // document.write("</tr>");
-       // }
-        //document.write("</table>");
-
-
-//     for (var i= 0; i < 21; i++){
-//     document.write("<tr style='height:30px;'>")
-//    // let kata = document.createElement("div")
-//     console.log(i);
+// //#12
+// document.write('<br>');
+// for(i = 0; i < sampleArray.length; i++) {
+//     if ((i % 2) === 0)
+//     document.write(sampleArray[i] + ' ');
 // }
+// //#13
+// document.write('<br>');
+// //#14
 
-     // for(i=1; i<=1; i++) {
-    //     // Create a div, with class "bar", and set the width to 100px.
-    //     var newElement = document.createElement("div");
-    //     newElement.className = "bar";
-    //     newElement.style.width = i*100 + "px";
+// //#15
+var deeDuh = "";
+for(i = 1; i < 21; i++) {
+    deeDuh = deeDuh + i + " ";
+ }
+ putInHtml(deeDuh, 'div15');
+// //#16
+// document.write('<br>');
+// for(var i = 0; i < sampleArray.length; i++){
+//     total = (total + sampleArray[i])
+//     document.write(total);
+// }
+//#17
+// var fud = Math.min(sampleArray.every);
+// putInHtml(fud, 'div17');
 
-    //     // Place a text label inside the new div.
-    //     var newText = document.createTextNode(10);
-    //     newElement.appendChild(newText);
+// //#18
+// var duf = Math.max(sampleArray.every);
+// putInHtml(duf, 'div18');
 
-    //     // Put the new div on the page inside the existing element "d1".
-    //     var destination = document.getElementById("d1");
-    //     destination.appendChild(newElement);
-    //   }
+//#19
 
-
-
-
-    //   for(i=1; i<=1; i++) {
-    //     // Create a div, with class "bar", and set the width to 100px.
-    //     var newElement = document.createElement("div");
-    //     newElement.className = "bar";
-    //     newElement.style.width = i*200 + "px";
-
-    //     // Place a text label inside the new div.
-    //     var newText = document.createTextNode("Bar #" + i);
-    //     newElement.appendChild(newText);
-
-    //     // Put the new div on the page inside the existing element "d1".
-    //     var destination = document.getElementById("d1");
-    //     destination.appendChild(newElement);
-    //   }
-
-
-
+//#20
